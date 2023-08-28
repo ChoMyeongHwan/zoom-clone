@@ -8,6 +8,12 @@ html(lang="en")
     body 
         header 
             h1 Moom!
-        main
-            h2 Welcom to Moom
+        main 
+            form#nick
+                input(type="text", placeholder="닉네임을 입력하세요", required)
+                button 저장
+            ul
+            form#message
+                input(type="text", placeholder="메세지를 작성하세요", required)
+                button 전송
         script(src="/public/js/app.js")
